@@ -1,6 +1,6 @@
 \documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
 \usepackage{kotex}
-\title{Reasoning Bandwidth}
+\title{The Next Compiler}
 \author{Dongjae Lee}
 \date{2025.03.20}
 
@@ -9,13 +9,13 @@
 
 
 \begin{abstract}
-  최근 
+	The advent of compilers has made machine and assembly languages largely obsolete for most programmers. Few can still use assembly language, but it is inefficient in terms of time. High-level languages, being closer to human speech, are convenient and allow for concise coding. Now, with language models, some people bypass programming languages altogether. In this era of next-generation compilers, I explore perspectives on these changes as someone involved with programming languages.
 \end{abstract}
-  Artificial General Intelligence (AGI) remains an inherently ambiguous and ill-defined concept. To date, there exists no official consensus on AGI, with researchers defining it according to their individual interpretations. However, a precise definition is essential to elevate AGI into the rigorous scientific discourse. How, then, can we define AGI with clarity and formally?
+The rise of new technologies often brings high hopes, big disappointments, and eventually, better living standards. Compilers and high-level languages are no different. Many thought high-level languages would make programming too simple and reduce expertise. However, new tech has brought fresh challenges, benefiting programminglanguage researchers.
 
-  In this article, I propose defining AGI as an artificial intelligence capable of solving all problems that humanity has solved thus far. For instance, such an AI must be able to solve all problems that were solved by Turing. A critical constraint in this framework concerns the training data: the AI can only learn knowledge that was available to Turing during his lifetime or knowledge from that era, and cannot access modern advancements.
+Language models seem to disrupt this status quo, as programming languages face replacement by natural language. Techniques like type checking, and static analysis are too flexible for natural language.
 
-  If such an artificial intelligence can successfully solve all problems addressed by eminent scientists such as Turing, Gauss, Einstein, and others, it could be classified as AGI—an intelligence capable of solving all problems within the scope of human intellectual achievement.
+However, new tech inevitably creates new issues, such as the inconsistency between natural language and code. In compilers, Translation Validation checks for mismatches between original and complied program. Creating tools to find these gaps between natural language and code could be promising.
 
-  The most challenging aspect of implementing this experimental approach lies in the impossibility of acquiring comprehensive training data from these renowned scientists. Furthermore, training data encompasses not only textual information but also images, audio, video, and other multimodal inputs. If we could simulate the virtual environments of these scientists' respective eras, we might be able to generate the necessary training data by reconstructing their historical contexts.
+Another challenge is optimizing in high-level languages, which requires changing algorithms, making rule-based methods tough like optimization pass in conventional compilers. However, using language models to draft a manual of optimization guidelines, not strictly rule-based, could help. Language models can use this guide to find and apply optimizations to current programs. Adding a feature to verify optimization success based on guidelines would be ideal.
 \end{document}
