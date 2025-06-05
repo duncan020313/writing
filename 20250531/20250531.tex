@@ -7,19 +7,19 @@
 \maketitle
 
 \begin{abstract}
-	Programming languages have become increasingly abstracted over time. This is because advances in hardware and compilers have eliminated the need to consider low-level elements when programming. As a result, productivity and efficiency have dramatically increased. Language models will further abstract programming languages to a higher dimension, making programming tasks easier and more efficient.
+	Programming languages have become increasingly abstracted over time. This is because advances in hardware and compilers have reduced the need to consider low-level elements when programming. As a result, productivity and efficiency have dramatically increased. Language models will push programming languages to an even higher level of abstraction, making programming tasks easier and more efficient.
 \end{abstract}
 
-In the past, due to limited hardware performance and compilers, programmers had
-to program with hardware considerations in mind. As hardware has advanced and
-compilers have added numerous optimizations, most programmers no longer need to
-consider hardware. Thanks to this, software development productivity has been
-able to increase dramatically.
+In the past, due to limited hardware performance and compiler capabilities,
+programmers had to develop software with hardware limitations in mind. As
+hardware has advanced and compilers have added numerous functionalities, most
+programmers no longer need to consider hardware. Thanks to this, software
+development productivity has increased dramatically.
 
-Abstraction, in other words, means that you don't have to specify concretely
-how to do it. Now programmers don't have to specify concretely what sorting
-algorithm to use, how to manage memory, how to handle network communication,
-etc.
+Abstraction, in other words, means not needing to specify the concrete
+implementation details. Now, programmers are often not required to explicitly
+define what sorting algorithm to use, how memory should be managed, or how
+network communication should be handled, among other details.
 
 Language models will enable programmers to program declaratively at a very high
 level of abstraction. Compilers of existing programming languages translated
@@ -28,11 +28,11 @@ rules. However, language models can understand user intent and convert it into
 procedural algorithms even in situations where there are no predetermined
 rules.
 
-However, to ensure correctness, there must be a guarantee that the converted
-algorithm is correct. In the case of existing compilers, this is guaranteed
-through numerous tests or verification techniques. However, since static
-inspection is virtually impossible for language models, it is necessary to
-dynamically check whether the converted algorithm meets the user's
-instructions. I would like to guarantee this through \textsc{Expecto} and
-create a new programming language and compiler based on this.
+However, to ensure correctness, the accuracy of the converted algorithm must be
+guaranteed. In the case of existing compilers, this is guaranteed through
+numerous tests or verification techniques. However, since static inspection is
+impossible for language models, it is necessary to dynamically check whether
+the converted algorithm aligns with the user's intent. I would like to
+guarantee correctness through \textsc{Expecto} and create a new programming
+language and compiler based on \textsc{Expecto}.
 \end{document}
