@@ -28,11 +28,11 @@ rules. However, language models can understand user intent and convert it into
 procedural algorithms even in situations where there are no predetermined
 rules.
 
-However, to ensure correctness, the accuracy of the converted algorithm must be
-guaranteed. In the case of existing compilers, this is guaranteed through
-numerous tests or verification techniques. However, since static inspection is
-impossible for language models, it is necessary to dynamically check whether
-the converted algorithm aligns with the user's intent. I would like to
-guarantee correctness through \textsc{Expecto} and create a new programming
-language and compiler based on \textsc{Expecto}.
+The key point is the correctness of the converted algorithm must be guaranteed.
+In the case of compilers, the correctness is guaranteed through
+numerous tests or verification techniques. However, due to the black-box nature of language models,
+it is necessary to dynamically check whether the converted algorithm
+aligns with the user's intent in runtime. I would like to guarantee correctness
+through \textsc{Expecto} and create a new programming language and compiler
+based on \textsc{Expecto}.
 \end{document}
