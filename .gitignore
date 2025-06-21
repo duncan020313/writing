@@ -7,3 +7,4 @@
 *.gz
 *.fdb_latexmk
 .DS_Store
+markdown/*
