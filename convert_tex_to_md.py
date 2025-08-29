@@ -22,14 +22,14 @@ Behaviour:
 This script does **not** attempt to generate Hugo front-matter. It focuses only
 on content conversion and proper filename conventions.
 """
+
 from __future__ import annotations
 
-import os
+import re
 import subprocess
 import sys
-from pathlib import Path
 from datetime import datetime
-import re
+from pathlib import Path
 
 # ------- Configuration -----------------------------------------------------
 TEX_EXTENSION = ".tex"
@@ -55,6 +55,7 @@ def is_korean_tex(path: Path) -> bool:
         # In doubt, assume not Korean.
         return False
 
+
 def run_pandoc(src: Path) -> str:
     """Return the Markdown conversion of *src* using pandoc (string)."""
     cmd = [PANDOC_CMD, *PANDOC_ARGS, str(src)]
@@ -62,7 +63,9 @@ def run_pandoc(src: Path) -> str:
         out = subprocess.run(cmd, check=True, capture_output=True, text=True)
         return out.stdout
     except FileNotFoundError:
-        sys.exit("Error: pandoc not found. Please install pandoc and make sure it is in your PATH.")
+        sys.exit(
+            "Error: pandoc not found. Please install pandoc and make sure it is in your PATH."
+        )
     except subprocess.CalledProcessError as exc:
         sys.exit(f"pandoc failed for {src}: {exc}")
 
@@ -113,20 +116,32 @@ def _parse_date(raw: str) -> str | None:
     return None
 
 
+def _normalize_filename(filename: str) -> str:
+    pattern = r"(\d{4})(\d{2})(\d{2})"
+    match = re.search(pattern, filename)
+    if match:
+        return f"{match.group(1)}{match.group(2)}{match.group(3)}"
+    return filename
+
+
 def convert_tex_files(root: Path) -> None:
     count = 0
     markdown_dir = root / "markdown"
     markdown_dir.mkdir(exist_ok=True)
-    
+
     for path in root.rglob(f"*{TEX_EXTENSION}"):
         if path.name == TEMPLATE_NAME:
             continue  # skip template files
 
+        # Normalize filename by extracting date information
+        normalized_name = _normalize_filename(path.name)
+        print(normalized_name)
+
         korean = is_korean_tex(path)
         suffix = ".ko.md" if korean else ".md"
-        
+
         # Create target filename based on directory and file name
-        stem = path.stem  # filename without .tex extension
+        stem = normalized_name  # filename without .tex extension
         target_name = stem + suffix
         target = markdown_dir / target_name
 
@@ -141,7 +156,7 @@ def convert_tex_files(root: Path) -> None:
 
         front_matter = "---\n"
         if title:
-            front_matter += f"title: \"{title}\"\n"
+            front_matter += f'title: "{title}"\n'
         if iso_date:
             front_matter += f"date: {iso_date}\n"
         front_matter += "---\n\n"
@@ -154,8 +169,14 @@ def convert_tex_files(root: Path) -> None:
     if count == 0:
         print("No markdown files needed regeneration.")
     else:
-        print(f"Converted {count} TeX files to Markdown ({datetime.now():%Y-%m-%d %H:%M:%S}).")
+        print(
+            f"Converted {count} TeX files to Markdown ({datetime.now():%Y-%m-%d %H:%M:%S})."
+        )
 
 
 if __name__ == "__main__":
-    convert_tex_files(Path.cwd()) 
+    markdown_dir = Path.cwd() / "markdown"
+    # remove all files in markdown_dir
+    for file in markdown_dir.glob("*"):
+        file.unlink()
+    convert_tex_files(Path.cwd())
