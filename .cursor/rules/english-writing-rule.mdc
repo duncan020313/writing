@@ -1,0 +1,78 @@
+---
+description: Writing Rules
+globs:
+alwaysApply: true
+---
+# Writing
+
+Among various communication methods, writing is emphasized with a separate document for the following reasons:
+1. It is the most crucial tool in the academic world. Papers, research proposals, research reports, even emails—the primary means of communication in this world are written.
+2. It is the easiest tool to master through practice. Speaking, listening, and body language, which demand immediate responses, are difficult to break free from long-standing personal habits. People's quick-thinking abilities also vary greatly. Add the pressure of time and space while maintaining eye contact with the other person, or even if it's in English, it's not easy to rapidly improve communication skills. But writing is different. There is time to revise and time to search for better expressions.
+Moreover, the methods for writing well are somewhat standardized. By learning these, anyone can write in a way that keeps pace in the academic world.
+3. I can easily ruminate on my thoughts myself. As I write, my thoughts become organized and vague concepts clarify.
+I will come to understand what I don't know and what I do know. Even if my writing is initially filled with redundant and awkward sentences, as I revise and revise,
+alongside the writing becoming cleaner, I will feel my own thoughts becoming clearer. Consider the process of pulling very thin, fine hand-pulled noodles.
+It starts with scattered flour (material, ideas). Gather it together to form a large dough ball (vague draft, ambiguous outline).
+From this point, a continuous refinement process begins. The large mass is divided into two, then four, then eight... The writing process is the same. Long sentences are broken into shorter breaths,
+long paragraphs split into multiple paragraphs, missing content is added, words are replaced with simpler ones, logical connections are corrected, and so on. By the time the thin hand-pulled noodles are formed,
+the path my thoughts travel will also have become a smooth, paved road.
+Below are several key writing tips and points to keep in mind.
+
+## Writing Etiquette
+
+Writing is done for the reader. If you were writing solely for yourself, it wouldn't matter how you wrote. However, if there is an actual reader, basic etiquette must be observed.
+Proper spacing, spelling, avoiding typos, and maintaining formatting (font, paragraphs, etc.) are fundamental courtesies every writer should observe. Therefore, don't take them lightly; always pay attention.
+This isn't stale formality; it's a means of consideration to help readers read your writing more easily and comfortably.
+
+## Top-Down Structure
+
+As emphasized in communication, the core principle is top-down structure. Using it is simple: the very first sentence of each paragraph should be the topic sentence encompassing the entire paragraph.
+To check if your writing overall follows top-down structure, read only the first sentence of each paragraph. If you grasp the flow of the entire piece, it's well-written.
+If the flow of any section feels off, that sentence is not the topic sentence.
+Additionally, avoid constructing an entire paragraph with just one sentence. A paragraph with nothing to explain has no value, and if there is something to explain but only one sentence,
+it shows a lack of consideration for the reader.
+
+## Short Sentences
+
+Sentences should be short. The writing we produce is meant to explain and argue based on logic. While writing that aims to stir emotions and resonate with readers might be different, logical writing benefits from brevity. It's easier to understand. While it's possible to make long sentences understandable, it's incredibly difficult.
+Aim for each sentence to be roughly one line long on an A4 sheet of paper.
+## Tools of Civilization
+
+Unlike other means of communication, writing allows easy access to various useful tools. This is especially helpful when writing in English.
+Below are programs that are easy to use when writing in English. If you discover new, good tools, try them out within the lab and add them to the list.
+
+- [Grammarly](https://www.grammarly.com): English grammar checker. The free version is sufficient.
+- [Writefull](https://writefullapp.com): Example sentence search tool. It shows frequency, allowing you to gauge how common or awkward your English sentences are.
+- [Thesaurus](https://www.thesaurus.com): Synonym dictionary. Useful for homonyms or when you want to express a subtly different nuance.
+- [QuillBot](https://quillbot.com/): English expression refinement. Useful for rephrasing the same English sentence to make it more fluent, plausible, and easier to understand.
+
+Especially when writing English sentences (e.g., for a thesis) to be reviewed by a professor, always use AI to polish your sentences.
+In this day and age, even if your English skills are a bit lacking, you can more than make up for it with diligence.
+Therefore, remember that everyone's expectations have risen significantly.
+## Correct Translation
+
+We inevitably must be proficient in both Korean and English. Since English is the common language of the global academic community, we must be fluent in it. At the same time, as the future leaders of the Korean scientific community, we must also clearly master the Korean language. Because the language of academia is English, when explaining concepts in our own language or writing, we often need to translate concepts defined in English into Korean. A common mistake in such situations is looking up words in an English dictionary and performing a literal 1:1 translation into Korean. Such rudimentary translation often results in childishly simplistic expressions, awkwardly stilted phrasing, or, in many cases, text that is difficult to comprehend.
+
+When a concept is clearly understood, it can be translated into the most appropriate, straightforward Korean words or sentences. Of course, this isn't always easy. In such cases, it's best to put our heads together. Let's look at a few examples. Among the terms frequently used in our field is the English word `formal`. It appears in expressions like `formal semantics`, `formal method`, and `formal definition`. Looking it up in an English dictionary, the first translation given is `형식적` (formal).
+So, if we translate it as `형식적 의미`, `형식적 방법`, `형식적 정의`, does that properly convey the original meaning? In Korean, doesn't `형식적` carry a sense of being unnecessarily
+superficial or just for show? Is the superficial meaning of a program all we're striving to study and explore? If you understand the concept well, you'll know that `formal` here
+means `rigorous`. What we study is precise in its meaning, method, and definition, leaving no ambiguity and being unambiguous. Another common example is the term `sensitive`. It is frequently used in phrases like `context-sensitive` or `flow-sensitive`. Typically, it is translated using the first word that comes up in an English dictionary, `민감한` (sensitive), but this translation fails to capture the original meaning well. In Korean, the word "sensitive" carries a connotation of overreacting to something.
+However, the original meaning being discussed here implies having discernment to distinguish. It means being sufficiently precise to distinguish context and flow.
+Therefore, translating `context-sensitive analysis` as `context-distinguishing analysis` is the most natural. `context-distinguishing analysis` also sounds awkward.
+English naturally forms nouns by joining words, but Korean does not. For more on these differences between English and Korean, refer to the recommended books "The Birth of Translation" and "Writing Korean Correctly" below.
+
+When writing formal documents, always adhere to the following principles. This is a courtesy owed to the reader.
+- Do not mix Korean and English. For example, avoid phrases like `이러한 context-sensitive 분석은 ...`.
+- For specialized terms not widely used, always include the English term alongside the Korean. For example, `문맥을 구분하는 분석 (context-sensitive analysis)`.
+
+Expressing technical terms correctly in Korean is no easy task, but it is our duty. Only those proficient in English, Korean, and their specialized field can accomplish this.
+Globally, only a tiny minority, including us, possess this capability. The general public can only follow in our footsteps. Approach each sentence with this sense of duty, deliberating fiercely over every word.
+
+## Recommended Reading and Resources
+- [How to Write a Great Research Paper](assets/simon-papers.pdf) [<img src="icons/youtube.png" width="16" />](https://www.youtube.com/watch?v=WP-FkUaOcOM)
+- [How to Write Papers So People Can Read Them](assets/plmw16.pdf) [<img src="icons/youtube.png" width="16" />](https://www.youtube.com/watch?v=KfEVdMMY1aQ)
+- [Curse of knowledge](assets/plmw17.pdf)
+- 번역의 탄생, 이희재
+- 우리글 바로쓰기, 이오덕
+- [논문 쓰는 방법](assets/writing.md), 최인철
+- 기타 위 자료에서 추천하는 유명한 글쓰기 책
