@@ -1,0 +1,45 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{kotex}
+\title{How to work with AI}
+\author{Dongjae Lee}
+\date{2025.10.01}
+
+\begin{document}
+\maketitle
+
+
+\begin{abstract}
+	Several papers, including AlphaEvolve\footnote{AlphaEvolve team, AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms, 2025.05.14}, claim to have developed AI Scientists.
+	However, many people still question the practical usefulness of AI in the real world.
+	This gap depends on how well you utilize AI.
+	In this article, I share my experience regarding research acceleration using AI.
+\end{abstract}
+
+The advancement of LLMs is accelerating various intellectual tasks.
+Recently, AI seems poised to replace even research activities.
+In this article, I would like to share these experiences through specific examples.
+
+
+
+First is development. While LLMs cannot develop an entire research project, they perform well when you break down the problem.
+In particular, unit tests can enhance the stability of the project.
+Also, periodic refactoring and clear type information improve the maintainability of the code.
+
+
+
+Second is data analysis.
+When examining raw data directly to formulate hypotheses and test them, processing data directly with \texttt{matplotlib} and \texttt{pandas} can be very cumbersome.
+In such cases, LLMs are very useful for writing data analysis scripts to test the hypotheses.
+
+
+
+Lastly, research idea generation.
+Of course, vaguely asking "What should I research?" is meaningless.
+What humans need to do is define clear problems and have AI generate ideas to solve or optimize those problems.
+In my case, the Z3 Solver kept raising timeout errors, and by working with AI to develop various ideas and implementations to solve this problem, I was able to significantly reduce the timeout rate.
+
+
+
+The important thing is to clearly distinguish between what LLMs should do and what I should do. This minimizes bottlenecks and, according to Amdahl's law, maximizes the efficiency of multiple brains (you and AI). We now live in an era where AI utilization skills are also important. We must consider which parts of our work AI can replace.
+
+\end{document}
