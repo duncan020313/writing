@@ -12,7 +12,7 @@
 \begin{abstract}
 	While latest LLMs are good at generating safe code, inserting try-catch blocks and if-guards everywhere is not what we want \footnote{[\href{https://x.com/karpathy/status/1976082963382272334/photo/1}{Super Safe Divison}]}.
 	However, getting LLMs to insert exception handling logic in the right places is very challenging.
-	I believe highly expressive type systems can solve this problem.
+	I believe highly expressive and strong type systems can solve this problem.
 \end{abstract}
 
 Through the RLVR (Reinforcement Learning with Verifiable Reward) methodology,
@@ -24,13 +24,12 @@ From a safety perspective, reward hacking manifests as follows: LLMs insert exce
 While they have created safe code, it is not in the form we desired.
 Creating a perfect reward system is a challenge not only for reinforcement learning but for all of humanity (Goodhart's Law).
 
-To solve this problem, I propose making LLMs effectively use expressive type systems.
-LLMs insert exception handling everywhere due to uncertainty about exception occurrence.
-In particular, even if they have previously determined the likelihood of exception occurrence, the LLMs' context is reset with each session.
-If types could indicate exception possibilities, LLMs could confidently write core logic without excessive safety code.
+To solve this problem, I propose making LLMs use expressive and strong type systems.
+LLMs insert exception handling everywhere due to uncertainty about error occurrence.
+Even if they have previously determined the error occurrence possibility, the LLMs' context is reset with each session.
+Types can indicate error occurrence possibility, LLMs can confidently remove unnecessary safety code.
 
-During the training process, if unnecessary exception handling is inserted, this could be detected through type checkers.
-Current LLMs cannot yet freely handle even Rust's type system.
-It is time to move beyond Python to Rust and Lean.
+During the training process, if unnecessary safety code is inserted, this could be detected through type checkers and give penalty to the model.
+It is time to move beyond Python to Rust and Lean, where type systems are more expressive and strong.
 
 \end{document}
